@@ -20,6 +20,9 @@ js  = [
     './resources/js/bootstrap/*.*',        // Todos os arquivos do diretório bootstrap e sub diretórios
     './resources/js/cbpFWTabs.js',     // cbpFWTabs
     './resources/js/scripts.js'              // Arquivo único
+],
+html = [
+    './html/*'         // Todos os arquivos do diretório HTML
 ];
  
 // Processo que agrupará todos os arquivos CSS, removerá comentários CSS e minificará.
@@ -42,7 +45,7 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('minify-html', function () {
-    gulp.src('./html/*.html') // path to your files
+    gulp.src(html) // path to your files
     .pipe(htmlmin({
         "collapseWhitespace": true,
         "removeTagWhitespace": true,
@@ -53,10 +56,11 @@ gulp.task('minify-html', function () {
 });
  
 // Tarefa padrão quando executado o comando GULP
-gulp.task('default',['minify-js','minify-css']);
+gulp.task('default',['minify-js','minify-css','minify-html']);
  
 // Tarefa de monitoração caso algum arquivo seja modificado, deve ser executado e deixado aberto, comando "gulp watch".
 gulp.task('watch', function() {
     gulp.watch(js, ['minify-js']);
     gulp.watch(css, ['minify-css']);
+    gulp-watch(html, ['minify-html']);
 });
