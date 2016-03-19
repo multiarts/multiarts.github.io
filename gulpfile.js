@@ -12,7 +12,8 @@ var    gulp      = require('gulp'),
 // Todos os arquivos CSS que serão compactados
 // Explicação: (/*.css e /*.js) busca todos os arquivos css/js de uma pasta, (/**/*.css e /**/*.js) busca todos os arquivos css/js de uma pasta e sub pasta.
 var css = [
-    './resources/css/*.css'
+    './resources/css/style.css',
+    './resources/css/responsive.css'
 ],
 // Todos os arquivos JS que serão compactados
 js  = [
@@ -45,7 +46,7 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('minify-html', function () {
-    gulp.src(html) // path to your files
+    gulp.src(html)
     .pipe(htmlmin({
         "collapseWhitespace": true,
         "removeTagWhitespace": true,
@@ -62,5 +63,5 @@ gulp.task('default',['minify-js','minify-css','minify-html']);
 gulp.task('watch', function() {
     gulp.watch(js, ['minify-js']);
     gulp.watch(css, ['minify-css']);
-    gulp-watch(html, ['minify-html']);
+    gulp.watch(html, ['minify-html']);
 });
