@@ -419,7 +419,14 @@ h6 { font-weight: 300 }
 #fp-nav li a:hover,
 #fp-nav li a:focus { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6) }
 .fp-slidesNav li a.active,
-#fp-nav li a.active { box-shadow: inset 0 0 0 8px white }
+#fp-nav li a.active {
+    box-shadow: inset 0 0 0 8px white;
+    box-shadow: inset 0 0 0 8px rgba(3, 110, 131, 0.46), 0 0 0 5px rgba(144, 211, 228, 0.35);
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+}
 
 
 /*---------------------------------------
@@ -762,12 +769,12 @@ SECTIONS
 .section-image {
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: 47%;
     overflow: hidden;
     z-index: 1;
     margin-top: -192px;
     width: 232px;
-    height: 407px;
+    height: 450px;
     margin-left: 270px;
     border-radius: 3px;
 }
@@ -775,7 +782,7 @@ SECTIONS
 .section-image img {
     width: 100%;
     display: block;
-    max-height: 407px;
+    max-height: 450px;
 }
 .screenshots-wrapper {
     -webkit-transition: 0.9s;
