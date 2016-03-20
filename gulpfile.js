@@ -13,13 +13,13 @@ var    gulp      = require('gulp'),
 // Explicação: (/*.css e /*.js) busca todos os arquivos css/js de uma pasta, (/**/*.css e /**/*.js) busca todos os arquivos css/js de uma pasta e sub pasta.
 var css = [
     './resources/css/style.css',
+    './resources/css/flaticon.css',
     './resources/css/responsive.css'
 ],
 // Todos os arquivos JS que serão compactados
 js  = [
     './resources/js/jquery/*',               // Todos os arquivos do diretório Jquery
     './resources/js/bootstrap/*.*',        // Todos os arquivos do diretório bootstrap e sub diretórios
-    './resources/js/cbpFWTabs.js',     // cbpFWTabs
     './resources/js/scripts.js'              // Arquivo único
 ],
 html = [
