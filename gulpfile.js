@@ -6,6 +6,8 @@ var    gulp      = require('gulp'),
         concat   = require("gulp-concat"),  // Agrupa todos os arquivos em um
         cssmin   = require("gulp-cssmin"), // Minifica o CSS
         htmlmin  = require('gulp-htmlmin'), // Minimiza o HTML
+        imagemin = require('gulp-imagemin'),
+        pngquant = require('imagemin-pngquant'),
         stripCssComments = require('gulp-strip-css-comments'); // Remove comentários CSS
 
 // Definimos o diretório dos arquivos para evitar repetição futuramente
@@ -24,8 +26,20 @@ js  = [
 ],
 html = [
     './html/*'         // Todos os arquivos do diretório HTML
+],
+imgs = [
+    'resources/images/*'
 ];
  
+gulp.task('minify-img', () => {
+    return gulp.src(imgs)
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./assets/images/'));
+});
 // Processo que agrupará todos os arquivos CSS, removerá comentários CSS e minificará.
 gulp.task('minify-css', function(){
     gulp.src(css)
@@ -64,4 +78,5 @@ gulp.task('watch', function() {
     gulp.watch(js, ['minify-js']);
     gulp.watch(css, ['minify-css']);
     gulp.watch(html, ['minify-html']);
+    gulp.watch(imgs, ['minify-img']);
 });
