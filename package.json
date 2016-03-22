@@ -12,6 +12,7 @@
     "gulp-size": "^2.1.0",
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglify": "*",
-    "gulp-watch": "^4.3.5"
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.2"
   }
 }

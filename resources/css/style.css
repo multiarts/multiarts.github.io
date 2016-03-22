@@ -281,6 +281,7 @@ h6 { font-weight: 300 }
 .sidr {
     display: none;
     position: absolute;
+    /*border-right: 1px solid #333;*/
     position: fixed;
     top: 0;
     height: 100%;
@@ -290,7 +291,19 @@ h6 { font-weight: 300 }
     overflow-y: auto;
     font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-size: 15px;
-    background: #1A8DBE;
+/*    background: #312d2d;
+    background: rgba(49, 45, 45, 0.9);*/
+}
+.sidr .blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    background: #fff;
+    background: rgba(49, 45, 45, 0.9);
+    z-index: -9;
 }
 .sidr.right {
     left: auto;
