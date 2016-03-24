@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
     (function() {
     [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
         new CBPFWTabs(el);
@@ -7,6 +10,7 @@ $(document).ready(function() {
     $('#main-nav').sidr();
 
     $('#fullpage').fullpage({
+        sectionsColor: ['transparent', '#4BBFC3', '#7BAABE', 'whitesmoke', 'transparent'],
         'verticalCentered': true,
         'easing': 'easeInOutCirc',
         'css3': false,
@@ -41,5 +45,6 @@ $(document).ready(function() {
     });
 });
 jQuery(window).load(function() {
-    jQuery('#preloader').fadeOut('fast');
+    // jQuery('#preloader').fadeOut('fast');
+    
 });
