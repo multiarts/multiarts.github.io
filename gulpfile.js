@@ -9,10 +9,12 @@ var gulp             = require('gulp'),
     imagemin         = require('gulp-imagemin'),
     pngquant         = require('imagemin-pngquant'),
     stripCssComments = require('gulp-strip-css-comments'); // Remove comentários CSS
+ /*
+ * Definimos o diretório dos arquivos para evitar repetição futuramente
+ * Todos os arquivos CSS que serão compactados
+ * Explicação: (/*.css e /*.js) busca todos os arquivos css/js de uma pasta, (/**//*.css e /**//*.js) busca todos os arquivos css/js de uma pasta e sub pasta.
+  */
 
-// Definimos o diretório dos arquivos para evitar repetição futuramente
-// Todos os arquivos CSS que serão compactados
-// Explicação: (/*.css e /*.js) busca todos os arquivos css/js de uma pasta, (/**/*.css e /**/*.js) busca todos os arquivos css/js de uma pasta e sub pasta.
 var css = [
     './resources/css/style.css',
     './resources/css/flaticon.css',
@@ -20,12 +22,12 @@ var css = [
 ],
 // Todos os arquivos JS que serão compactados
 js  = [
-    './resources/js/jquery/*',               // Todos os arquivos do diretório Jquery
-    './resources/js/bootstrap/*.*',        // Todos os arquivos do diretório bootstrap e sub diretórios
-    './resources/js/scripts.js'              // Arquivo único
+    './resources/js/jquery/*',      // Todos os arquivos do diretório Jquery
+    './resources/js/bootstrap/*.*', // Todos os arquivos do diretório bootstrap e sub diretórios
+    './resources/js/scripts.js'     // Arquivo único
 ],
 html = [
-    './html/*'         // Todos os arquivos do diretório HTML
+    './html/*' // Todos os arquivos do diretório HTML
 ],
 imgs = [
     'resources/images/*'
@@ -52,10 +54,10 @@ gulp.task('mincss', function(){
  
 // Tarefa de minificação do Javascript
 gulp.task('minjs', function () {
-    gulp.src(js)                                    // Arquivos que serão carregados, veja variável 'js' no início
-    .pipe(concat('all.min.js'))                 // Arquivo único de saída
-    .pipe(uglify())                                // Transforma para formato ilegível
-    .pipe(gulp.dest('./assets/js/'))          // pasta de destino do arquivo(s)
+    gulp.src(js)                     // Arquivos que serão carregados, veja variável 'js' no início
+    .pipe(concat('all.min.js'))      // Arquivo único de saída
+    .pipe(uglify())                  // Transforma para formato ilegível
+    .pipe(gulp.dest('./assets/js/')) // pasta de destino do arquivo(s)
     .pipe(size());
 });
 
@@ -72,7 +74,6 @@ gulp.task('minhtml', function () {
  
 // Tarefa padrão quando executado o comando GULP
 gulp.task('default',['minjs','mincss','minhtml']);
- 
 // Tarefa de monitoração caso algum arquivo seja modificado, deve ser executado e deixado aberto, comando "gulp watch".
 gulp.task('watch', function() {
     gulp.watch(js, ['minjs']);
