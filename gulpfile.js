@@ -1,14 +1,14 @@
  // Núcleo do Gulp
-var    gulp        = require('gulp'),
-        size         = require('gulp-size'),       // Exíbe o tamanho dos arquivos minimizados
-        uglify       = require("gulp-uglify"),    // Transforma o javascript em formato ilegível para humanos
-        watch      = require('gulp-watch'),    // Verifica alterações em tempo real, caso haja, compacta novamente todo o projeto
-        concat     = require("gulp-concat"),  // Agrupa todos os arquivos em um
-        cssmin     = require("gulp-cssmin"), // Minifica o CSS
-        htmlmin    = require('gulp-htmlmin'), // Minimiza o HTML
-        imagemin = require('gulp-imagemin'),
-        pngquant  = require('imagemin-pngquant'),
-        stripCssComments = require('gulp-strip-css-comments'); // Remove comentários CSS
+var gulp             = require('gulp'),
+    size             = require('gulp-size'),    // Exíbe o tamanho dos arquivos minimizados
+    uglify           = require("gulp-uglify"),  // Transforma o javascript em formato ilegível para humanos
+    watch            = require('gulp-watch'),   // Verifica alterações em tempo real, caso haja, compacta novamente todo o projeto
+    concat           = require("gulp-concat"),  // Agrupa todos os arquivos em um
+    cssmin           = require("gulp-cssmin"),  // Minifica o CSS
+    htmlmin          = require('gulp-htmlmin'), // Minimiza o HTML
+    imagemin         = require('gulp-imagemin'),
+    pngquant         = require('imagemin-pngquant'),
+    stripCssComments = require('gulp-strip-css-comments'); // Remove comentários CSS
 
 // Definimos o diretório dos arquivos para evitar repetição futuramente
 // Todos os arquivos CSS que serão compactados
@@ -31,8 +31,8 @@ imgs = [
     'resources/images/*'
 ];
  
-gulp.task('minimg', () => {
-    return gulp.src(imgs)
+gulp.task('minimg', function(){
+     gulp.src(imgs)
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -64,7 +64,7 @@ gulp.task('minhtml', function () {
     .pipe(htmlmin({
         "collapseWhitespace": true,
         "removeTagWhitespace": true,
-        "removeComments": true,
+        "removeComments": true
     }))
     .pipe(gulp.dest('.'))
     .pipe(size());
