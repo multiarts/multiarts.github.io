@@ -8,10 +8,16 @@
         display: none;
     }
 
-    #social-icons, #logo {
+    #logo {
         position: fixed;
-        width: 100%;
+        width: 80%;
         left: 0;
+        text-align: center;
+    }
+    #social-icons {
+        position: fixed;
+        width: 20%;
+        right: 0;
         text-align: center;
     }
 
@@ -49,7 +55,6 @@
 }
 
 @media (max-width: 870px) {
-
     h1, h2, h3 {
         font-size: 40px;
     }
@@ -59,7 +64,7 @@
     }
 
     .sidr-open .wrap .box,
-.box {
+    .box {
         width: 100%;
         text-align: center;
         font-size: 14px;
@@ -159,7 +164,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
-  
+    #social-icons{
+        position: fixed;
+        bottom: 2%;
+        width: 100%;
+    }
+    .box .box-right{display: none}
+    .box p { margin: 15px 0; width: auto}
     h1, h2, h3 {
         font-size: 25px;
         line-height: 1;

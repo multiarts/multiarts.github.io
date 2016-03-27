@@ -167,12 +167,10 @@ h6 { font-weight: 300 }
     right: 2px;
     padding: 2px;
     margin-top: -125px;
-    /*border:2px solid #fdd;*/
     border-radius: 5px;
     background: #555;
     background: rgba(0,0,0,.4);
     height: 100%
-
 }
 .box p { margin: 15px 0; width: 70% }
 .overlay {
@@ -212,11 +210,10 @@ h6 { font-weight: 300 }
     position: fixed;
     top: 2%;
 }
-
 /*Social Icons*/
 #social-icons {
     position: fixed;
-    bottom: 2%;
+    right: 2px;
 }
 #social-icons ul {
     padding: 0;

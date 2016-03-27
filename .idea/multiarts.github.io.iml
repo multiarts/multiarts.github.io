@@ -4,5 +4,29 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../bin/php/php-5.6.16" />
+          <root url="file://$MODULE_DIR$/../../bin/php/php-7.0.0" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../bin/php/php-5.6.16" />
+          <root url="file://$MODULE_DIR$/../../bin/php/php-7.0.0" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/../../bin/php/php-7.0.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/../../bin/php/php-5.6.16/pharcommand.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/../../bin/php/php-7.0.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/../../bin/php/php-5.6.16/pharcommand.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

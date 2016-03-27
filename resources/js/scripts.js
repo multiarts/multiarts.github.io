@@ -19,8 +19,8 @@ $(document).ready(function() {
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
         'navigation': true,
-        'anchors': ['Home', 'Features', 'Clients', 'Pricing', 'Contact'],
-        'navigationPosition': 'left'
+        // 'anchors': ['Home', 'Features', 'Clients', 'Pricing', 'Contact'],
+        'navigationPosition': 'right'
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
 
     $('#submit').click(function(){ 
-        $.post("contact.php", $("#contact-form").serialize(),  function(response) {
+        $.post("send.php", $("#contact-form").serialize(),  function(response) {
             $('#success').fadeIn().html(response);
             $('#success').delay(2000).fadeOut();
         });
