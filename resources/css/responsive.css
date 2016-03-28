@@ -17,6 +17,7 @@
     #social-icons {
         position: fixed;
         width: 20%;
+        top: 0;
         right: 0;
         text-align: center;
     }
