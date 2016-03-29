@@ -1,12 +1,8 @@
 $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 3000);
-    (function() {
-    [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
-        new CBPFWTabs(el);
-    });
-    })();
+    }, 2000);
+
     $('#main-nav').sidr();
 
     $('#fullpage').fullpage({
