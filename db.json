@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "category": "Hamburgeres",
+        "title": "Hamburger",
+        "price": 5.60,
+        "images": [
+            {
+                "0": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiAy9m9-bngAhXQIbkGHdjKCAYQjRx6BAgBEAU&url=https%3A%2F%2Fwww.teclasap.com.br%2Fhamburger%2F&psig=AOvVaw0pZq869jAzMMegonx1MPuQ&ust=1550189885474946",
+                "1": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiTydTd-bngAhVpJ7kGHV24B9YQjRx6BAgBEAU&url=https%3A%2F%2Fwww.auau.com.br%2Fhamburgueres%2Fhamburgueres-classicos%2Fburguer-bacon-honey-mustard&psig=AOvVaw0pZq869jAzMMegonx1MPuQ&ust=1550189885474946",
+                "2": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjvs9Hq-bngAhWHGrkGHeTDD9wQjRx6BAgBEAU&url=https%3A%2F%2Fbr.123rf.com%2Fphoto_16283397_grande-hamb%25C3%25BArguer-saboroso-isolado-em-um-fundo-branco.html&psig=AOvVaw0pZq869jAzMMegonx1MPuQ&ust=1550189885474946"
+            }
+        ],
+        "extras": [
+            {
+                "title": "Maionese",
+                "price": 1.20
+            },
+            {
+                "title": "+ Carne de Hamburger",
+                "price": 1.50
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Pizzas",
+        "title": "Pizza de chocolate",
+        "price": 15.00,
+        "images": [
+            {
+                "0": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiQ0_20_bngAhWuH7kGHSU1DeAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.tudoreceitas.com%2Freceita-de-pizza-doce-de-chocolate-7671.html&psig=AOvVaw2Jr1Dh6MdFtYYeomQO03zx&ust=1550190935527761",
+                "1": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiciJzD_bngAhWtHrkGHefiDvwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.tudogostoso.com.br%2Freceita%2F55212-pizza-de-chocolate.html&psig=AOvVaw2Jr1Dh6MdFtYYeomQO03zx&ust=1550190935527761",
+                "2": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjeksXJ_bngAhUHE7kGHUzNDbMQjRx6BAgBEAU&url=https%3A%2F%2Fanamariabraga.globo.com%2Freceitas%2Fpizza-de-chocolate-com-morangos&psig=AOvVaw2Jr1Dh6MdFtYYeomQO03zx&ust=1550190935527761"
+            }
+        ],
+        "sizes": [
+            {
+                "title": "P",
+                "price": 12.00
+            },
+            {
+                "title": "M",
+                "price": 15.00
+            },
+            {
+                "title": "G",
+                "price": 20.00
+            }
+        ],
+        "extras": [
+            {
+                "title": "Refrigerante lata - Coca",
+                "price": 3.50
+            },
+            {
+                "title": "Borda grossa com catupiry",
+                "price": 2.50
+            },
+            {
+                "title": "Refrigerante 1L",
+                "price": 6.80
+            }
+        ]
+    }
+]
