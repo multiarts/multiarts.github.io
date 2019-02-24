@@ -4,7 +4,7 @@
         "category": "Hamburgeres",
         "title": "Hamburger",
         "price": 5.60,
-        "stars": 4,
+        "stars": 4.2,
         "images": {
             "0": "https://www.teclasap.com.br/wp-content/uploads/2007/05/hamburger.png",
             "1": "https://www.auau.com.br/image/cache/data/up_system/product-13699/honey_mostard-1000x1000.jpg",
@@ -26,7 +26,7 @@
         "category": "Pizzas",
         "title": "Pizza de chocolate",
         "price": 15.00,
-        "stars": 5,
+        "stars": 3.5,
         "images": {
             "0": "https://t1.rg.ltmcdn.com/pt/images/1/7/6/pizza_doce_de_chocolate_7671_600.jpg",
             "1": "https://img.itdg.com.br/tdg/images/recipes/000/055/212/131483/131483_original.jpg?mode=crop&width=710&height=400",
