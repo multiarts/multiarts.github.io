@@ -23,6 +23,33 @@
     },
     {
         "id": 2,
+        "category": "Hamburgeres",
+        "title": "Hamburger quem sabe",
+        "price": 5.60,
+        "stars": 2.2,
+        "images": {
+            "0": "https://www.teclasap.com.br/wp-content/uploads/2007/05/hamburger.png",
+            "1": "https://www.auau.com.br/image/cache/data/up_system/product-13699/honey_mostard-1000x1000.jpg",
+            "2": "https://previews.123rf.com/images/alexandrmoroz/alexandrmoroz1211/alexandrmoroz121100022/16283397-big-tasty-hamburger-isolated-on-a-white-background.jpg"
+        },
+        "extras": [
+            {
+                "title": "Maionese",
+                "price": 1.20
+            },
+            
+            {
+                "title": "Tomate",
+                "price": 0.80
+            },
+            {
+                "title": "+ Carne de Hamburger",
+                "price": 1.50
+            }
+        ]
+    },
+    {
+        "id": 3,
         "category": "Pizzas",
         "title": "Pizza de chocolate",
         "price": 15.00,
