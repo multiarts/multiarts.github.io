@@ -58,5 +58,35 @@
             "id": 2,
             "title": "Category B"
         }
-    }
+    },
+    {
+        "id": 1,
+        "title": "Product A",
+        "description": "Description of Product A",
+        "price": 1.58,
+        "active": true,
+        "thumb": "https://w1.ezcdn.com.br/vemplast/fotos/grande/1532fg1/xicara-com-pires-elegance-vemplast-80ml-linha-profissional-cook-em-policarbonato-vermelho.jpg",
+        "images": [
+            {
+                "url": "http://d26lpennugtm8s.cloudfront.net/stores/382/993/products/xicara-e-pires-relieve-vermelho1-a5cc48cd032bfc0c8015640842316917-640-0.png"
+            },
+            {
+                "url": "https://cdn.awsli.com.br/600x450/41/41975/produto/39252229/7ce5373833.jpg"
+            }
+        ],
+        "adcionais": [
+            {
+                "title": "Adicional product A",
+                "price": 123.27
+            },
+            {
+                "title": "Adicional product A-b",
+                "price": 16.48
+            }
+        ],
+        "category": {
+            "id": 1,
+            "title": "Category A"
+        }
+    },
 ]
