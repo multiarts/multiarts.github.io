@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "Product A",
         "description": "Description of Product A",
         "price": 1.58,
@@ -30,7 +29,6 @@
         }
     },
     {
-        "id": 2,
         "title": "Product B",
         "description": "Description of Product B",
         "price": 1.58,
@@ -60,7 +58,6 @@
         }
     },
     {
-        "id": 1,
         "title": "Product A",
         "description": "Description of Product A",
         "price": 1.58,
