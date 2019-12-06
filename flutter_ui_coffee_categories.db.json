@@ -1,11 +1,35 @@
 [
   {
-    "title": "Expresso"
+    "title": "Com leite"
   },
   {
-    "title": "Expresso A"
+    "title": "Capuccino"
   },
   {
-    "title": "Expresso B"
+    "title": "Mocha"
+  },
+  {
+    "title": "Latte"
+  },
+  {
+    "title": "Cortado"
+  },
+  {
+    "title": "Italiano"
+  },
+  {
+    "title": "Macchiato"
+  },
+  {
+    "title": "Média"
+  },
+  {
+    "title": "Pingado"
+  },
+  {
+    "title": "Breve"
+  },
+  {
+    "title": "Chantilly"
   }
 ]
