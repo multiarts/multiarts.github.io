@@ -3,8 +3,8 @@
         "title": "Product A",
         "description": "Description of Product A",
         "price": 1.58,
-        "active": true,
-        "thumb": "https://www.isagenixhealth.net/wp-content/uploads/2016/09/Product-B-Lifestyle-Shot_640x400.jpg",
+        "active": false,
+        "thumb": "https://a-static.mlcdn.com.br/618x463/xicara-com-pires-cha-relieve-green-270ml-corona-yoi/showdcasa/19346/93208bdcbcd0619b0f570f1db3d9cb08.jpg",
         "images": [
             {
                 "url": "http://d26lpennugtm8s.cloudfront.net/stores/382/993/products/xicara-e-pires-relieve-vermelho1-a5cc48cd032bfc0c8015640842316917-640-0.png"
@@ -58,9 +58,9 @@
         }
     },
     {
-        "title": "Product A",
+        "title": "Product C",
         "description": "Description of Product A",
-        "price": 1.58,
+        "price": 51.58,
         "active": true,
         "thumb": "https://www.isagenixhealth.net/wp-content/uploads/2016/09/Product-B-Lifestyle-Shot_640x400.jpg",
         "images": [
@@ -73,17 +73,17 @@
         ],
         "adcionais": [
             {
-                "title": "Adicional product A",
-                "price": 123.27
+                "title": "Adicional product C",
+                "price": 13.27
             },
             {
-                "title": "Adicional product A-b",
-                "price": 16.48
+                "title": "Adicional product C-a",
+                "price": 31.48
             }
         ],
         "category": {
             "id": 1,
-            "title": "Category A"
+            "title": "Category C"
         }
     }
 ]
