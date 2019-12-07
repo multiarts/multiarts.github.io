@@ -30,7 +30,7 @@
         }
     },
     {
-        "id":2,
+        "id": 2,
         "title": "Product B",
         "description": "Description of Product B",
         "price": 1.58,
@@ -60,7 +60,7 @@
         }
     },
     {
-        "id":3,
+        "id": 3,
         "title": "Product C",
         "description": "Description of Product A",
         "price": 51.58,
