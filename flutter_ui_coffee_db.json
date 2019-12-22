@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id":"1",
         "title": "Product A",
         "description": "Description of Product A",
         "price": 1.58,
@@ -25,12 +25,12 @@
             }
         ],
         "category": {
-            "id": 1,
+            "id": "1",
             "title": "Category A"
         }
     },
     {
-        "id": 2,
+        "id": "2",
         "title": "Product B",
         "description": "Description of Product B",
         "price": 1.58,
@@ -55,12 +55,12 @@
             }
         ],
         "category": {
-            "id": 2,
+            "id": "2",
             "title": "Category B"
         }
     },
     {
-        "id": 3,
+        "id": "3",
         "title": "Product C",
         "description": "Description of Product A",
         "price": 51.58,
@@ -85,7 +85,7 @@
             }
         ],
         "category": {
-            "id": 1,
+            "id": "1",
             "title": "Category C"
         }
     }
